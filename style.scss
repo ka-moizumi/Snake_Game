@@ -1,0 +1,370 @@
+$cBlack: black;
+$cWhite: white;
+$cScreen: #003030;
+$cButton: #44bbff;
+$cStart: #00dd66;
+$cStartShadow: #00bb77;
+$cStop: #ffdd33;
+$cStopShadow: #ccaa22;
+$cOver: #ee3355;
+$cOverShadow: #ba1212;
+$cLine: #666666;
+$cOperationShadow: #0077cc;
+$cOperationPush: #00aaee;
+
+#global-container {
+    width: 100%;
+    height: 100%;
+    // margin: 50vh auto 0;
+    // transform: translateY(-50%);
+    background-color: $cWhite;
+
+    & #container {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        width: 350px;
+        left: calc(50% - 175px);
+        margin: 0;
+        font-weight: 800;
+
+        & .header {
+            margin-bottom: -8px;
+
+            & .title {
+                height: 40px;
+                color: $cBlack;
+                background-color: $cWhite;
+                border:solid 1px $cLine;
+                border-radius: 10px 10px 0 0;
+
+                & h1 {
+                    font-size: 16px;
+                }
+            }
+
+            & .status {
+                position: relative;
+                display: flex;
+                height: 60px;
+                color: $cWhite;
+                background-color: $cBlack;
+                border:solid 1px $cLine;
+                font-weight: 600;
+                font-size: 14px;
+
+                & .length-navi {
+                    position: absolute;
+                    top: 30%;
+                    left: 5%;
+                    margin: 0;
+                }
+
+                & .length {
+                    display: inline-block;
+                    position: absolute;
+                    top: 10%;
+                    left: 80px;
+                    margin: 0;
+                    width: 50px;
+                    height: 40px;
+                    background-color: $cScreen;
+
+                    & .length__number{
+                        display: inline-block;
+                        margin: 10px;
+                    }
+                }
+
+                & .diff-navi{
+                    position: absolute;
+                    top: 30%;
+                    left: 40%;
+                    margin: 0;
+                }
+
+                & .diff {
+                    position: relative;
+                    top: 10%;
+                    left: 65%;
+                    margin: 0;
+                    width: 20px;
+                    height: 40px;
+                    background-color: $cScreen;
+
+                    & .diff__now {
+                        display: inline-block;
+                        position: absolute;
+                        top: 25%;
+                        left: 0;
+                        width: 30px;
+                        height: 20px;
+                        background-color: $cScreen;
+                    }
+
+                    & .diff__up, .diff__down {
+                        display: inline-block;
+                        position: absolute;
+                        top: 0%;
+                        left: 100%;
+                        width: 30px;
+                        height: 20px;
+                        font-size: 12px;
+                        background-color: $cScreen;
+
+                        & > span {
+                            width: 80%;
+                            height: 100%;
+                            font-size: 14px;
+                            color: $cLine;
+                        }
+
+                    }
+
+                    & .diff__up {
+                        top: 0;
+
+                        & .diff-up {
+                            display: inline-block;
+
+                            &:hover {
+                                cursor: pointer;
+                                color: $cWhite;
+                                transition: 0.2s;
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+
+                    & .diff__down {
+                        top: 50%;
+
+                        & .diff-down {
+                            display: inline-block;
+                            transform: rotate(180deg);
+
+                            &:hover {
+                                cursor: pointer;
+                                color: $cWhite;
+                                transition: 0.2s;
+                                transform: rotate(180deg) scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .main {
+            position: relative;
+            display: inline-flex;
+            flex-flow: row wrap;
+            background-color: $cScreen;
+            width: 350px;
+            height: 350px;
+
+            & .field {
+                color: $cWhite;
+                background-color: $cScreen;
+                top: 0;
+                left: 0;
+                margin: 0;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        & .footer {
+
+            & .btn__start {
+                background-color: $cStart;
+                box-shadow: 0 5px 0 0 $cStartShadow;
+                width: 350px;
+                border: solid 1px $cStartShadow;
+                height: 50px;
+                color: $cWhite;
+                font-size: 16px;
+                border-radius: 5px;
+                margin: 2px 0 6px 0;
+
+                &:hover {
+                    cursor: pointer;
+                } 
+
+                &:active {
+                    transition: 0.1s;
+                    transform: translateY(5px);
+                    box-shadow: none;
+                    background-color: $cStartShadow;
+                }
+            }
+
+            & .btn__stop {
+                background-color: $cStop;
+                box-shadow: 0 5px 0 0 $cStopShadow;
+                width: 350px;
+                border: solid 1px $cStopShadow;
+                height: 50px;
+                color: $cWhite;
+                font-size: 16px;
+                border-radius: 5px;
+                margin: 2px 0 6px 0;
+
+                &:hover {
+                    cursor: pointer;
+                } 
+
+                &:active {
+                    transition: 0.1s;
+                    transform: translateY(5px);
+                    box-shadow: none;
+                    background-color: $cStopShadow;
+                }
+            }
+
+            & .btn__over {
+                background-color: $cOver;
+                box-shadow: 0 5px 0 0 $cOverShadow;
+                width: 350px;
+                border: solid 1px $cOverShadow;
+                height: 50px;
+                color: $cWhite;
+                font-size: 16px;
+                border-radius: 5px;
+                margin: 2px 0 6px 0;
+
+                &:hover {
+                    cursor: pointer;
+                } 
+
+                &:active {
+                    transition: 0.1s;
+                    transform: translateY(5px);
+                    box-shadow: none;
+                    background-color: $cOverShadow;
+                }
+            }
+
+            & .operation {
+                width: 350px;
+                height: 100px;
+                display: flex;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                color: $cButton;
+
+                &__btn {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    
+                    & .btn-left {
+                        position: absolute;
+                        top: 0;
+                        left: 1px;
+                        width: 33.3%;
+                        height: 100%;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        color: $cWhite;
+                        background-color: $cButton;
+                        border: solid 1px $cOperationShadow;
+                        box-shadow: 0 5px 0 0 $cOperationShadow;
+
+                        &:hover {
+                            cursor: pointer;
+                        } 
+
+                        &:active {
+                            transition: 0.1s;
+                            transform: translateY(5px);
+                            box-shadow: none;
+                            background-color: $cOperationPush;
+                        }
+                    }
+
+                    & .updown {
+                        display: inline-flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 0;
+                        left: 33.3%;
+                        width: 33.3%;
+                        height: 100%;
+                        padding: 0;
+
+                        & .btn-up {
+                            height: 45%;
+                            border-radius: 5px;
+                            margin-bottom: 5%;
+                            color: $cWhite;
+                            background-color: $cButton;
+                            border: solid 1px $cOperationShadow;
+                            box-shadow: 0 5px 0 0 $cOperationShadow;
+
+                            &:hover {
+                                cursor: pointer;
+                            } 
+
+                            &:active {
+                                transition: 0.1s;
+                                transform: translateY(5px);
+                                box-shadow: none;
+                                background-color: $cOperationPush;
+                            }
+                        }
+
+                        & .btn-down {
+                            height: 50%;
+                            border-radius: 5px;
+                            color: $cWhite;
+                            background-color: $cButton;
+                            border: solid 1px $cOperationShadow;
+                            box-shadow: 0 5px 0 0 $cOperationShadow;
+
+                            &:hover {
+                                cursor: pointer;
+                            } 
+
+                            &:active {
+                                transition: 0.1s;
+                                transform: translateY(5px);
+                                box-shadow: none;
+                                background-color: $cOperationPush;
+                            }
+                        }
+
+                    }
+
+                    & .btn-right {
+                        position: absolute;
+                        top: 0;
+                        left: 66.6%;
+                        width: 33.3%;
+                        height: 100%;
+                        padding: 0;
+                        border-radius: 5px;
+                        color: $cWhite;
+                        background-color: $cButton;
+                        border: solid 1px $cOperationShadow;
+                        box-shadow: 0 5px 0 0 $cOperationShadow;
+
+                        &:hover {
+                            cursor: pointer;
+                        } 
+
+                        &:active {
+                            transition: 0.1s;
+                            transform: translateY(5px);
+                            box-shadow: none;
+                            background-color: $cOperationPush;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

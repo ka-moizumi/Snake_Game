@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="global-container">
+       <div id="container">
+            <header class="header">
+                <div class="title">
+                    <h1>Snake Game</h1>
+                </div>
+                <div class="status">
+                    <span class="length-navi">Length: </span>
+                    <div class="length">
+                        <span class="length__number"></span>
+                    </div>
+                    <span class="diff-navi">Difficulty:</span>
+                    <div class="diff">
+                        <div class="diff__now">3</div>
+                        <div class="diff__up">
+                            <span class="diff-up">&utrif;</span>
+                        </div>
+                        <div class="diff__down">
+                            <span class="diff-down">&utrif;</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <canvas class="main">
+
+            </canvas>
+            <footer class="footer">
+                <button class="btn__start">START</button>
+                <div class="operation">
+                    <div class="operation__btn">
+                        <button class="btn-left">←</button>
+                        <div class="updown">
+                            <button class="btn-up">↑</button>
+                            <button class="btn-down">↓</button>
+                        </div>
+                        
+                        <button class="btn-right">→</button>
+                    </div>
+                </div>
+            </footer>
+       </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
