@@ -9,6 +9,7 @@
   position: relative;
   display: inline-block;
   width: 350px;
+  height: 95vh;
   left: calc(50% - 175px);
   margin: 0;
   font-weight: 800;
@@ -16,10 +17,11 @@
 
 #global-container #container .header {
   margin-bottom: -8px;
+  height: 20%;
 }
 
 #global-container #container .header .title {
-  height: 40px;
+  height: 30%;
   color: black;
   background-color: white;
   border: solid 1px #666666;
@@ -35,7 +37,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  height: 70%;
   color: white;
   background-color: black;
   border: solid 1px #666666;
@@ -45,7 +47,7 @@
 
 #global-container #container .header .status .length-navi {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 5%;
   margin: 0;
 }
@@ -53,11 +55,11 @@
 #global-container #container .header .status .length {
   display: inline-block;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 80px;
   margin: 0;
   width: 50px;
-  height: 40px;
+  height: 50%;
   background-color: #003030;
 }
 
@@ -68,18 +70,18 @@
 
 #global-container #container .header .status .diff-navi {
   position: absolute;
-  top: 30%;
-  left: 40%;
+  top: 35%;
+  left: 45%;
   margin: 0;
 }
 
 #global-container #container .header .status .diff {
   position: relative;
-  top: 10%;
-  left: 65%;
+  top: 20%;
+  left: 70%;
   margin: 0;
-  width: 20px;
-  height: 40px;
+  width: 30px;
+  height: 50%;
   background-color: #003030;
 }
 
@@ -89,22 +91,24 @@
   top: 25%;
   left: 0;
   width: 30px;
-  height: 20px;
+  height: 50%;
   background-color: #003030;
 }
 
-#global-container #container .header .status .diff .diff__up, #global-container #container .header .status .diff .diff__down {
+#global-container #container .header .status .diff .diff__up,
+#global-container #container .header .status .diff .diff__down {
   display: inline-block;
   position: absolute;
   top: 0%;
   left: 100%;
   width: 30px;
-  height: 20px;
+  height: 50%;
   font-size: 12px;
   background-color: #003030;
 }
 
-#global-container #container .header .status .diff .diff__up > span, #global-container #container .header .status .diff .diff__down > span {
+#global-container #container .header .status .diff .diff__up > span,
+#global-container #container .header .status .diff .diff__down > span {
   width: 80%;
   height: 100%;
   font-size: 14px;
@@ -158,7 +162,7 @@
           flex-flow: row wrap;
   background-color: #003030;
   width: 350px;
-  height: 350px;
+  height: 55%;
 }
 
 #global-container #container .main .field {
@@ -171,13 +175,17 @@
   height: 10px;
 }
 
+#global-container #container .footer {
+  height: 20%;
+}
+
 #global-container #container .footer .btn__start {
   background-color: #00dd66;
   -webkit-box-shadow: 0 5px 0 0 #00bb77;
           box-shadow: 0 5px 0 0 #00bb77;
   width: 350px;
   border: solid 1px #00bb77;
-  height: 50px;
+  height: 35%;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -204,7 +212,7 @@
           box-shadow: 0 5px 0 0 #ccaa22;
   width: 350px;
   border: solid 1px #ccaa22;
-  height: 50px;
+  height: 30%;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -231,7 +239,7 @@
           box-shadow: 0 5px 0 0 #ba1212;
   width: 350px;
   border: solid 1px #ba1212;
-  height: 50px;
+  height: 30%;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -254,7 +262,7 @@
 
 #global-container #container .footer .operation {
   width: 350px;
-  height: 100px;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +319,7 @@
           flex-direction: column;
   position: absolute;
   top: 0;
-  left: 33.3%;
+  left: 33.33%;
   width: 33.3%;
   height: 100%;
   padding: 0;
